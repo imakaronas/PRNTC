@@ -43,6 +43,7 @@
             this.btnEFG = new System.Windows.Forms.Button();
             this.btnPBG_OLIS = new System.Windows.Forms.Button();
             this.btnPBG = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -80,6 +81,7 @@
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "I.I.S.";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btnIIStop
             // 
@@ -88,7 +90,8 @@
             this.btnIIStop.Location = new System.Drawing.Point(96, 30);
             this.btnIIStop.Name = "btnIIStop";
             this.btnIIStop.Size = new System.Drawing.Size(70, 50);
-            this.btnIIStop.TabIndex = 9;
+            this.btnIIStop.TabIndex = 2;
+            this.toolTip1.SetToolTip(this.btnIIStop, "Stop IIS");
             this.btnIIStop.UseVisualStyleBackColor = true;
             this.btnIIStop.Click += new System.EventHandler(this.btnIIStop_Click);
             // 
@@ -114,7 +117,8 @@
             this.btnIISStart.Location = new System.Drawing.Point(20, 30);
             this.btnIISStart.Name = "btnIISStart";
             this.btnIISStart.Size = new System.Drawing.Size(70, 50);
-            this.btnIISStart.TabIndex = 8;
+            this.btnIISStart.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.btnIISStart, "Start IIS");
             this.btnIISStart.UseVisualStyleBackColor = true;
             this.btnIISStart.Click += new System.EventHandler(this.btnIISStart_Click);
             // 
@@ -126,7 +130,8 @@
             this.btnIISReset.Location = new System.Drawing.Point(172, 30);
             this.btnIISReset.Name = "btnIISReset";
             this.btnIISReset.Size = new System.Drawing.Size(70, 50);
-            this.btnIISReset.TabIndex = 7;
+            this.btnIISReset.TabIndex = 3;
+            this.toolTip1.SetToolTip(this.btnIISReset, "Restart IIS");
             this.btnIISReset.UseVisualStyleBackColor = true;
             this.btnIISReset.Click += new System.EventHandler(this.btnIISReset_Click);
             // 
@@ -144,6 +149,7 @@
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Mocks";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // btnSettings
             // 
@@ -154,7 +160,7 @@
             this.btnSettings.Location = new System.Drawing.Point(20, 20);
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Size = new System.Drawing.Size(100, 40);
-            this.btnSettings.TabIndex = 12;
+            this.btnSettings.TabIndex = 4;
             this.btnSettings.Text = "Settings";
             this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSettings.UseVisualStyleBackColor = true;
@@ -162,41 +168,41 @@
             // 
             // btnNBG
             // 
-            this.btnNBG.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.btnNBG.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.btnNBG.Location = new System.Drawing.Point(20, 80);
             this.btnNBG.Name = "btnNBG";
             this.btnNBG.Size = new System.Drawing.Size(320, 53);
-            this.btnNBG.TabIndex = 11;
+            this.btnNBG.TabIndex = 5;
             this.btnNBG.Text = "Start NBG Mock";
             this.btnNBG.UseVisualStyleBackColor = true;
             this.btnNBG.Click += new System.EventHandler(this.btnNBG_Click);
             // 
             // btnEFG
             // 
-            this.btnEFG.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.btnEFG.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.btnEFG.Location = new System.Drawing.Point(20, 140);
             this.btnEFG.Name = "btnEFG";
             this.btnEFG.Size = new System.Drawing.Size(320, 53);
-            this.btnEFG.TabIndex = 10;
+            this.btnEFG.TabIndex = 6;
             this.btnEFG.Text = "Start EFG Mock";
             this.btnEFG.UseVisualStyleBackColor = true;
             this.btnEFG.Click += new System.EventHandler(this.btnEFG_Click);
             // 
             // btnPBG_OLIS
             // 
-            this.btnPBG_OLIS.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.btnPBG_OLIS.Location = new System.Drawing.Point(20, 200);
+            this.btnPBG_OLIS.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.btnPBG_OLIS.Location = new System.Drawing.Point(20, 260);
             this.btnPBG_OLIS.Name = "btnPBG_OLIS";
             this.btnPBG_OLIS.Size = new System.Drawing.Size(320, 53);
-            this.btnPBG_OLIS.TabIndex = 9;
+            this.btnPBG_OLIS.TabIndex = 7;
             this.btnPBG_OLIS.Text = "Start PBG OLIS Mock";
             this.btnPBG_OLIS.UseVisualStyleBackColor = true;
             this.btnPBG_OLIS.Click += new System.EventHandler(this.btnPBG_OLIS_Click);
             // 
             // btnPBG
             // 
-            this.btnPBG.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.btnPBG.Location = new System.Drawing.Point(20, 260);
+            this.btnPBG.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.btnPBG.Location = new System.Drawing.Point(20, 200);
             this.btnPBG.Name = "btnPBG";
             this.btnPBG.Size = new System.Drawing.Size(320, 53);
             this.btnPBG.TabIndex = 8;
@@ -240,6 +246,7 @@
         private System.Windows.Forms.Button btnPBG_OLIS;
         private System.Windows.Forms.Button btnPBG;
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 
