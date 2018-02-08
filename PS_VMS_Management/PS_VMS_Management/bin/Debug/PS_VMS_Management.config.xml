@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Mocks>
+  <Mock>
+    <MockID>1</MockID>
+    <SSK_Installation>NBG</SSK_Installation>
+    <MockPath>C:\SSK_Releases_UAT\SSK_NBG_APS\MockServer\bin\Release\NBG.ServerMock.exe</MockPath>
+  </Mock>
+  <Mock>
+    <MockID>2</MockID>
+    <SSK_Installation>PBG</SSK_Installation>
+    <MockPath>C:\SSK_Servers\SSK_EFG_APS\Server.Mock\bin\Debug\Server.Mock.exe</MockPath>
+  </Mock>
+  <Mock>
+    <MockID>3</MockID>
+    <SSK_Installation>PBG_OLIS</SSK_Installation>
+    <MockPath>C:\SSK_Servers\SSK_PBG_APS\MockServer\bin\Release\Piraeus.ServerMock.exe</MockPath>
+  </Mock>
+  <Mock>
+    <MockID>4</MockID>
+    <SSK_Installation>EFG</SSK_Installation>
+    <MockPath>C:\SSK_Servers\SSK_OLIS\MockServer\bin\Release\Piraeus.ServerMock.exe</MockPath>
+  </Mock>
+</Mocks>
