@@ -86,5 +86,29 @@ namespace PS_VMS_Management
         private void groupBox1_Enter(object sender, EventArgs e)
         {
         }
+
+        private void MainScreen_Resize(object sender, EventArgs e)
+        {
+            //if the form is minimized  
+            //hide it from the task bar  
+            //and show the system tray icon (represented by the NotifyIcon control)  
+            if (this.WindowState == FormWindowState.Minimized)
+            {
+                Hide();
+                notifyIcon.Visible = true;
+            }
+        }
+
+        private void notifyIcon_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            Show();
+            this.WindowState = FormWindowState.Normal;
+            notifyIcon.Visible = false;
+        }
+
+        private void Info(object sender, EventArgs e)
+        {
+
+        }
     }
 }

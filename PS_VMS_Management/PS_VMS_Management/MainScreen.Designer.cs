@@ -44,6 +44,7 @@
             this.btnPBG_OLIS = new System.Windows.Forms.Button();
             this.btnPBG = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -210,6 +211,14 @@
             this.btnPBG.UseVisualStyleBackColor = true;
             this.btnPBG.Click += new System.EventHandler(this.btnPBG_Click);
             // 
+            // notifyIcon
+            // 
+            this.notifyIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon.Icon")));
+            this.notifyIcon.Text = "PS VM Management";
+            this.notifyIcon.Visible = true;
+            this.notifyIcon.BalloonTipClicked += new System.EventHandler(this.Info);
+            this.notifyIcon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon_MouseDoubleClick);
+            // 
             // MainScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -224,6 +233,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PS VM Management [I.P. : ]";
             this.Load += new System.EventHandler(this.MainScreen_Load);
+            this.Resize += new System.EventHandler(this.MainScreen_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
@@ -247,6 +257,7 @@
         private System.Windows.Forms.Button btnPBG;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.NotifyIcon notifyIcon;
     }
 }
 
