@@ -3,7 +3,7 @@
   <Mock>
     <MockID>1</MockID>
     <SSK_Installation>NBG</SSK_Installation>
-    <MockPath>C:\SSK_Releases_UAT\SSK_NBG_APS\MockServer\bin\Release\NBG.ServerMock.exe</MockPath>
+    <MockPath>C:\Development\TFS\SSK\Dev\NBG\SSK\Custom\NBG\Server.Mock\bin\Debug\NBG.ServerMock.exe</MockPath>
   </Mock>
   <Mock>
     <MockID>2</MockID>

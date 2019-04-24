@@ -1,0 +1,6 @@
+C:\Development\Printec_Projects\TMS_ClearLogFiles\TMS_ClearLogFiles_Console\bin\Debug\TMS_ClearLogFiles_Console.exe.config
+C:\Development\Printec_Projects\TMS_ClearLogFiles\TMS_ClearLogFiles_Console\bin\Debug\TMS_ClearLogFiles_Console.exe
+C:\Development\Printec_Projects\TMS_ClearLogFiles\TMS_ClearLogFiles_Console\bin\Debug\TMS_ClearLogFiles_Console.pdb
+C:\Development\Printec_Projects\TMS_ClearLogFiles\TMS_ClearLogFiles_Console\obj\Debug\TMS_ClearLogFiles_Console.exe
+C:\Development\Printec_Projects\TMS_ClearLogFiles\TMS_ClearLogFiles_Console\obj\Debug\TMS_ClearLogFiles_Console.pdb
+C:\Development\Printec_Projects\TMS_ClearLogFiles\TMS_ClearLogFiles_Console\obj\Debug\TMS_ClearLogFiles_Console.csprojResolveAssemblyReference.cache
